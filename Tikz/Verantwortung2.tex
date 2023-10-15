@@ -1,0 +1,61 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{smartdiagram} %für tikz
+\usepackage[ngerman]{babel} %Sprache deutsch (für Silbentrennung)
+\usepackage[utf8]{inputenc} %UTF-Code für Umlaute
+\usepackage[T1]{fontenc} %Trennung von Wörtern mit Umlauten
+\usepackage{lmodern} %Schriftart
+%\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault} %Serifenlose Schrift als Standard
+\usepackage{microtype}
+\usesmartdiagramlibrary{additions}
+\usetikzlibrary{fit}
+\usetikzlibrary{decorations.pathreplacing}
+
+\tikzstyle{container} = [draw, rectangle, semithick, inner sep=0.3cm
+]
+
+%Aufzählungsstriche
+\AtBeginDocument{
+	\def\labelitemi{\normalfont\bfseries{--}}
+}
+
+
+\begin{document}
+	
+
+		\begin{tikzpicture}[
+		every node/.style = {shape=rectangle, % is not necessary, default node's shape is rectangle
+			rounded corners,
+			draw, semithick,
+			text width=3cm,
+			align=center,
+			node distance=1.4cm
+		}
+		]
+
+			\node(A){\textbf{Subjekt}%\\ 
+		%	\begin{itemize}
+		%		\item Einzelpersonen oder auch Kollektive?
+		%		\item Anforderungen an Akteur
+		%\end{itemize}
+	};
+			\node[right=of A] (X) {\textbf{Handlung}};
+			\node[right=of X] (Folgen) {\textbf{Handlungsfolgen} mit Bezug auf \textbf{Verantwortungsobjekt}};	
+			\path (A) -- (Folgen) node[midway, draw=none](Mitte){};
+			\node [above=of Mitte](B) {\textbf{Instanz}};
+			\node [right=of B](C) {\textbf{Adressat}};
+			
+			\node[below= of Mitte, text width=11cm,] (Hintergrund) {\textbf{normativer Hintergrund} (plus positive Vermutungen)};
+			
+			\draw[->, thick] (A) -- (X);
+			\draw[->, thick] (X) -- (Folgen);
+			
+			\draw[<	->, thick, dashed] (A) -- (B);
+			\draw[->, thick, dashed] (X) -- (B);
+			\draw[->, thick, dashed] (Folgen) -- (C);
+			\draw[<->, thick, dashed] (B) -- (C);
+			
+			\node [below= of Hintergrund, text width=11cm, draw=none, align=left] {Ein \textbf{Verantwortungssubjekt} ist vor einer \textbf{Verantwortungsin"|stanz} und gegenüber einem \textbf{Adressaten} der Verantwortung für die \textbf{Folgen} seiner Handlungen in Bezug auf ein \textbf{Verantwortungsobjekt} verantwortlich -- vor einem gegebenen \textbf{normativen Hintergrund }und der damit verbundenen positiven Vermutungen.};
+	\end{tikzpicture}
+
+\end{document}
