@@ -32,14 +32,14 @@ knitr::opts_chunk$set(dev = 'svg') # set output device to svg
 ```{r qr,  echo=FALSE, warning=FALSE}
 library(qrcode)
 
-qr <- qr_code('https://janvoss.github.io/verantwortungsvolles_wirtschaften')
+qr <- qr_code('https://janvoss.github.io/Gerechtigkeit')
 #plot(qr)
 
 generate_svg(qr, filename = "qr.svg")
 
 ```
 
-|       ${}$        | Unterlagen: <https://janvoss.github.io/verantwortungsvolles_wirtschaften> |
+|       ${}$        | Unterlagen: <https://janvoss.github.io/Gerechtigkeit> |
 |:---------------:|:-----------------------------------------------------:|
 | ![logo](logo.png) |                         ![](qr.svg){width="50%"}                          |
 
