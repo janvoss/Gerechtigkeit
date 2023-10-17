@@ -597,7 +597,7 @@ Voßwinkel](./Tikz/Verantwortung2.svg)
 
 ![Abbildung: Jan S. Voßwinkel](./Tikz/Moral-Sitte-Ethik.svg)
 
-# Gerechtigkeit
+# Gerechtigkeitsprinzipien
 
 Gerechtigkeit: Übereinstimmung von Handlungen und Zuständen mit
 akzeptierten Prinzipien
