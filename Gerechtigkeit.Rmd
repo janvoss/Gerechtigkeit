@@ -360,6 +360,8 @@ p1
 
 # Verantwortung
 
+Verantwortung: Das Einstehen eines Akteurs für die Folgen seiner Handlungen in Relation zu einer geltenden Norm (und positiven Vermutungen) (in Anlehnung an @heidbrinkDefinitionenUndVoraussetzungen2017). 
+
 ## Verhaltensregeln und Regelüberwachung
 
 -   Die Übernahme bzw. Zuweisung von Verantwortung setzt voraus
@@ -371,8 +373,10 @@ p1
     -   eine **Entität, vor** bzw. gegenüber **der man die Verantwortung
         trägt.**
 
-$\rightarrow$ Was ist bezüglich der Entität, vor bzw. gegenüber der man
-Verantwortung trägt, vorstellbar?
+$\rightarrow$ Was ist bezüglich der Instanz, die die Einhaltung von normativen Erwartungen überwacht, vorstellbar?
+
+- Rückgriff auf die Institutionenökonomik  
+- Institution: Regel plus Überwachungsinstanz
 
 Systematisierung von Verhaltensregeln anhand der Form der
 Regelüberwachung in sehr enger Anlehnung an Voigt (2009)
@@ -400,7 +404,8 @@ kable(df) #%>%
 ## Verantwortungsbegriff
 
 Elemente und Beziehungen des Verantwortungsbegriffs nach
-@lohStrukturenUndRelata2017 ![Abbildung: Jan S.
+@lohStrukturenUndRelata2017 
+![Abbildung: Jan S.
 Voßwinkel](./Tikz/Verantwortung2.svg)
 
 **Subjekt**
@@ -429,9 +434,49 @@ Voßwinkel](./Tikz/Verantwortung2.svg)
     -   Risiko vs. Unsicherheit
     -   Wissensbeschaffung zumutbar?
 
+
+## Gegenargumente zur Zuschreibung von Verantwortung
+
+### Deterministische Welt
+
+- Idee des Determinismus: Alles geschieht notwenig und ist daher vorherbestimmt
+
+- Kein Platz für normative Erwartung: Die Welt könnte ja gar nicht anders sein. 
+
+- Daher auch kein Platz für Verantwortung
+
+- Darüber hinaus: Determinismus ist aus theoretischer und praktischer Sicht nicht sehr plausibel
+
+Ergänzend:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KrzccF3cbuY?si=Drxc7G_T68kofUqD&amp;start=1560" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Erklärbare Welt
+
+- Die Welt ist zumindest grundsätzlich und zumindest zum Teil erklärbar
+
+- Modell menschlichen Verhaltens $\rightarrow$: Erklärbarkeit des Verhaltens
+
+- Wenn das Verhalten einer Person in einer Situation erklärbar ist, bleibt dann Raum für die Zuweisung von Verantwortung?
+
+- Typisches Modell (in der Ökonomik): Personen handeln in einer Situation (so, wie sie sie wahrnehmen), um mittels ihnen zur Verfügung stehenden Mittel ihre Ziele zu erreichen. Hierbei wägen sie die Folgen ihres Tuns ab
+
+- In diesem Modellrahmen verändert die Zuweisung (und das Akzeptieren) von Verantwortung das Entscheidungskalkül
+
+- Verantwortung verändert Entscheidungen. Gerade *weil* ich Handlungen erklärn kann, kann ich die Zuweisung von Verantwortung rechtfertigen
+
+## Verschiedene Arten des Verantwortungsbegriffs
+nach @heidbrinkDefinitionenUndVoraussetzungen2017
+
+- Handlungs(ergebnis)verantwortung  
+- Rollen- und Aufgabenverantwortung  
+-(universal)moralsiche Verantwortung  
+- rechtliche Verantwortlichkeit
+
+
 ## Funktionen der Verantwortung
 
--   Anreize für Rationalität
+-   Anreize für Rationalität und Sorgfalt
 
 -   Verantwortung bewährt sich in einem Umfeld ohne etablierte
     Verfahrensregeln, in dem pragmatisches Handeln in komlexen
