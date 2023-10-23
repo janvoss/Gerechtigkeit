@@ -386,10 +386,10 @@ Regelüberwachung in sehr enger Anlehnung an Voigt (2009)
 library(tidyverse)
 
 df <- data.frame(Regel=c("Konvention", "Ethische Regel", "Sitte", "Formelle private Regel", "Regel positiven Rechts"),
-                 "Überwachung" = c("Selbstüberwachung", "imperative Selbstbindung","informelle Überwachung durch andere Akteure", "organisierte private Überwachung", "organisierte statliche Überwachung"),
+                 "Überwachung" = c("Selbstüberwachung", "imperative Selbstbindung","informelle Überwachung durch andere Akteure", "organisierte private Überwachung", "organisierte staatliche Überwachung"),
                  'Institutionenkategorie'= c("intern vom Typ 1", "intern vom Typ 2",
                                              "intern vom Typ 3", "intern vom Typ 4",
-                                             "intern vom Typ 5"),
+                                             "extern"),
                  'Beispiel'=c("Regeln der Sprache", "Kategorischer Imperativ, privater Trainingsplan", "gesellschaftliche Umgangsformen", "Regeln des Sports", "Privat- und Strafrecht, öffentliches Recht"))
 
 
@@ -459,11 +459,11 @@ Ergänzend:
 
 - Wenn das Verhalten einer Person in einer Situation erklärbar ist, bleibt dann Raum für die Zuweisung von Verantwortung?
 
-- Typisches Modell (in der Ökonomik): Personen handeln in einer Situation (so, wie sie sie wahrnehmen), um mittels ihnen zur Verfügung stehenden Mittel ihre Ziele zu erreichen. Hierbei wägen sie die Folgen ihres Tuns ab
+- Typisches Modell (in der Ökonomik): Personen handeln in einer Situation (so, wie sie sie wahrnehmen), um mit ihnen zur Verfügung stehender Mittel ihre Ziele zu erreichen. Hierbei wägen sie die Folgen ihres Tuns ab
 
 - In diesem Modellrahmen verändert die Zuweisung (und das Akzeptieren) von Verantwortung das Entscheidungskalkül
 
-- Verantwortung verändert Entscheidungen. Gerade *weil* ich Handlungen erklärn kann, kann ich die Zuweisung von Verantwortung rechtfertigen
+- Verantwortung verändert Entscheidungen. Gerade *weil* ich Handlungen erklären kann, kann ich die Zuweisung von Verantwortung rechtfertigen
 
 ## Verschiedene Arten des Verantwortungsbegriffs
 nach @heidbrinkDefinitionenUndVoraussetzungen2017
