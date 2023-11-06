@@ -719,7 +719,7 @@ diktatorisch.
 
 ##### Der Beweis
 
-Der Beweis folt der Idee, dass es bei mindestens einer Kombination von individuellen Präferenzordnungen (, die wegen **UD** zulässig sein muss,) zu zeigen, dass dann bei Erfüllung aller anderen Anforderungen die Forderung nach **ND** nicht erfüllbar ist.
+Der Beweis folgt der Idee zu zeigen, dass bei mindestens einer Kombination von individuellen Präferenzordnungen (, die wegen **UD** zulässig sein muss,) bei Erfüllung aller anderen Anforderungen die Forderung nach **ND** nicht erfüllbar ist.
 
 **Begrifflichkeiten**
 
@@ -833,7 +833,7 @@ verstößt gegen **ND**.
     -   Individuen verfügen über (zutreffendes?) positives Wissen über
         die Funkionsweise der Welt
 
--   Worauf werden Indivuden sich einigen? $\dots$
+-   Worauf werden Individuen sich einigen? $\dots$
 
 ## Grundlegende Perspektiven der Gerechtigkeit
 
