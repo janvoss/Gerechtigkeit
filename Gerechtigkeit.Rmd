@@ -679,7 +679,7 @@ $W=\min(U_i)$
 
 #### Arrows Unmöglichkeitstheorem
 
-Die Darstellung folgt Weimann (2006)
+Die Darstellung folgt  @weimannWirtschaftspolitik2006
 
 ##### Grundlagen
 
@@ -718,6 +718,8 @@ abhängen, nicht jedoch von der Position einer dritten Alternative.
 diktatorisch.
 
 ##### Der Beweis
+
+Der Beweis folt der Idee, dass es bei mindestens einer Kombination von individuellen Präferenzordnungen (, die wegen **UD** zulässig sein muss,) zu zeigen, dass dann bei Erfüllung aller anderen Anforderungen die Forderung nach **ND** nicht erfüllbar ist.
 
 **Begrifflichkeiten**
 
@@ -872,6 +874,28 @@ Sechs Dimensionen der Gerechtigkeit
 5.  **Regelgerechtigkeit**
 
 6.  **Generationengerechtigkeit**
+
+# Anwendung: Klimaschutzpolitik und Gerechtigkeit {-}
+
+Bitte lesen Sie folgenden Text: [Müller-Salo, Johannnes & Pritzl, Rupert: Gerechtigkeit und Effizienz in der Klimapolitik, in: Wirtschaftsdienst 101 (2021), S. 971-976.](https://www.wirtschaftsdienst.eu/inhalt/jahr/2021/heft/12/beitrag/gerechtigkeit-und-effizienz-in-der-klimapolitik.html)
+
+```{r,  echo=FALSE, warning=FALSE, out.width="30%"}
+library(qrcode)
+
+qr <- qr_code('https://www.wirtschaftsdienst.eu/inhalt/jahr/2021/heft/12/beitrag/gerechtigkeit-und-effizienz-in-der-klimapolitik.html')
+plot(qr)
+
+```
+
+Bitte beantworten Sie die folgenden Fragen:
+
+a) Wofür benötigen Sie noch weitere Erläuterungen?
+
+a) Welche Beziehung besteht nach diesem Text zwischen Effizienz und Gerechtigkeit?
+
+a) Auf welcher Ebene wird die Verantwortung für Klimaschutzpolitik angesiedelt (Individuum, Kollektiv oder System?)
+
+a) Was sind die Schlussfolgerungen für die deutsche Klimaschutzpolitik und wie bewerten Sie diese?
 
 # (Un-)Gleichheit
 
