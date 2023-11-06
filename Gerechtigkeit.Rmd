@@ -841,12 +841,17 @@ Vgl. @duclosHorizontalVerticalEquity2018
 
 ### Vertikale Gerechtigkeit
 
--   Staatliche Belastungen und Begünstigungen sollen so ausgerichtet
+- Ungleichheit soll in angemessener Weise berücksichtigt werden
+
+-   Mögliche Folge: Staatliche Belastungen und Begünstigungen sollen so ausgerichtet
     sein, dass das Ausmaß der Ungleichheit verringert wird.
 
 -   (Diskussion: Begründung?)
 
 ### Horizontale Gerechtigkeit
+
+
+- Gleiche Sachverhalte sollen gleich behandelt werden
 
 -   Individuen in ethisch relevanter gleicher Position sollen sich auch
     nach staatlicher Behandlung in ethisch vergleichbarer Position
