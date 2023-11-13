@@ -870,19 +870,55 @@ Sechs Dimensionen der Gerechtigkeit
 
 1.  **Bedarfsgerechtigkeit**
 
+- Jede Person hat genug, um die Grundbedürfnisse zu decken
+
+- Heißt auch, dass man unterschiedliche Bedarfe berücksichtigt (z.B. bei Zugang zu Gesundheitsleistungen) 
+
 2.  **Leistungsgerechtigkeit**
+
+- Mehr Leistung soll Chancen auf höheres Einkommen erhöhen
+
+- Gilt insb. für Einnahmen aus marktlichen Transaktionen
+
+- Soll Anreize setzen bzw. motivieren
 
 3.  **Chancengerechtigkeit**
 
+- Personen sollen die gleiche Chance haben, bestimmte Berufe zu erfreifen
+
+- Zugang zu Bildung (Bafög, keine Studiengebühren, Studienkredite, Schulpflicht)
+
+- Nichtdiskiminierung
+
 4.  **Einkommensgerechtigkeit**
+
+
+- Gleicher Lohn für gleiche Leistung (gender pay gap)
+
+- Keine (willkürlichen) Unterschiede in der Entlohnung je nach Beruf (Kindererziehung vs. Metallverarbeitung)
+
+- Mindestlohn
+
+- Einkommensunterschiede sollten nicht "beliebig groß" werden
 
 5.  **Regelgerechtigkeit**
 
+- Gleiches Recht für Alle!
+
+- Nachvollziehbarkeit des rechtlichen Rahmens
+
 6.  **Generationengerechtigkeit**
+
+- Alle Gerenerationen sollen das Recht auf Lebensgrundlagen haben
+
+- Die Interessen aller Generationen sind bei Entscheidungen zu berücksichtigen
+
+- Auch nicht aktive Generationen sollen am materiellen Fortschritt teilhaben 
 
 # Anwendung: Klimaschutzpolitik und Gerechtigkeit {-}
 
 Bitte lesen Sie folgenden Text: [Müller-Salo, Johannnes & Pritzl, Rupert: Gerechtigkeit und Effizienz in der Klimapolitik, in: Wirtschaftsdienst 101 (2021), S. 971-976.](https://www.wirtschaftsdienst.eu/inhalt/jahr/2021/heft/12/beitrag/gerechtigkeit-und-effizienz-in-der-klimapolitik.html)
+
 
 ```{r,  echo=FALSE, warning=FALSE, out.width="30%"}
 library(qrcode)
@@ -901,6 +937,42 @@ a) Welche Beziehung besteht nach diesem Text zwischen Effizienz und Gerechtigkei
 a) Auf welcher Ebene wird die Verantwortung für Klimaschutzpolitik angesiedelt (Individuum, Kollektiv oder System?)
 
 a) Was sind die Schlussfolgerungen für die deutsche Klimaschutzpolitik und wie bewerten Sie diese?
+
+
+# Anwendung: Das aktuelle Jahresgutachten des Sachverständigenrates zur Begutachtgung der gesamtwirtschaftlichen Entwicklung {-}
+
+## Der Sachverständigenrat
+
+[Zum Sachverständigenrat](https://www.sachverstaendigenrat-wirtschaft.de/)
+
+## Das aktuelle Jahresgutachten
+
+[Kapitel 4 des aktuellen Jahresgutachtens](https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/jg202324/JG202324_Kapitel_4.pdf)
+
+
+```{r,  echo=FALSE, warning=FALSE, out.width="30%"}
+library(qrcode)
+
+qr <- qr_code('https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/jg202324/JG202324_Kapitel_4.pdf')
+plot(qr)
+
+```
+
+1. Bitte lesen Sie zunächst insb. den Abschnitt II.
+
+  a) Welche Fragen haben Sie?
+  
+  a) Welche Kernaussagen entnehmen Sie der Darstellung?
+  
+  a) Welche Anknüpfungspunkte sehen Sie an die Gerechtigkeitsdiskussion, die wir bislang geführt haben?
+  
+2. Lesen Sie nun bitte insbesondere Abschnitt IV.
+
+  a) Welche Fragen haben Sie?
+  
+  a) Welche Kernaussagen entnehmen Sie der Darstellung?
+  
+  a) Sehen Sie in den Maßnahmen einen relevanten Beitrag zur Entschärfung etaiger Gerechtigkeitsprobleme?
 
 # (Un-)Gleichheit
 
