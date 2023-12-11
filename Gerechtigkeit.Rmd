@@ -45,8 +45,6 @@ generate_svg(qr, filename = "qr.svg")
 
 # Organisatorisches {.unnumbered}
 
--   Unterlagen in neo
-
 -   Prüfungsleistung:
 
     -   K 60 (50%)
@@ -56,6 +54,48 @@ generate_svg(qr, filename = "qr.svg")
 
     -   Intergenerative Gerechtigkeit/Verantwortung\
     -   Globale Dimension der Verantwortung
+
+## Klausur
+s. Hinweise in der Veranstaltung
+
+## Essay
+
+- Zweiterteams
+
+- Umfang: Maximal fünf Seiten
+
+- Thema: Auswahl eines SDGs, davon eines Teilziels (x). Fragestellung: "(Wie) gelingt x?"
+
+- Wichtig ist eine fachlich fundierte Auseinandersetzung mit dem Thema - wichtig ist nicht, dass Sie tatsächlich eine Lösung entwerfen
+
+- Charakter eines Essays:
+
+  - Behandlung einer Fragestellung
+  
+  - Knappe Abhandlung, eigener Standpunkt wird vertreten
+  
+  - Basis: Inhaltliche Kompetenz
+  
+  - Fußnoten/Zitate können eingerbacht werden, sind aber eher unüblich und nicht verpflichtend.
+  
+  - Grundgliederung:
+  
+    - **Einleitung**: Motivation und Einführung in den Gegenstand
+    
+    - **Hauptteil**: Sachbezogene Argumentation, Hinführung zu einem Ergebnis
+    
+    - **Schluss**: Zusammenfassung wichtiger Ergebnisse, Gesamtreflexion, ggf. offene Fragen und Ausblick
+    
+  - Unterschiede zu einer wissenschaftlichen Ausarbeitung:
+  
+    - Subjektivität erlaubt und erwünscht
+    
+    - Weniger streng im zitieren
+    
+    - Stilistisch freier
+
+
+
 
 # Einleitung
 
@@ -826,7 +866,7 @@ verstößt gegen **ND**.
 -   Einstimmige Einigung auf Regeln als Ausweg aus dem
     Unmöglichkeitstheorem
 
--   Einstimmigkeit hinter dem „Schleier des Nichtwissens"
+-   Einstimmigkeit hinter dem "Schleier des Nichtwissens"
 
     -   Individuen wissen nichts über persönliche Merkmale
 
@@ -1493,6 +1533,145 @@ plot(qr)
 -   Individuelle vs. kollektive Verantwortung (Systemverantwortung)
 
 ## Das Problem nichtintendierter Effekte
+
+
+# Globale Operationalisierung: Ziele für nachhaltige Entwicklung
+
+## Begriff nachhaltige Entwicklung
+
+
+Nachhaltige Entwicklung ist Entwicklung, die die Bedürfnisse der Gegenwart so befriedigt, dass die Möglichkeiten zukünftiger Generationen nicht gefährdet werden.
+
+
+Nachhaltige Entwicklung hat drei Dimensionen:
+
+* **Ökologisch tragfähig:** Ressourcenverbrauch und Umweltbelastungen sollen nicht die Regenerationsfähigkeit der Ökosysteme überschreiten.
+
+* **Ökonomisch effizient:** Entwicklung soll Wohlstand schaffen und soziale Ungleichheiten verringern.
+
+* **Sozial gerecht:** Alle Menschen sollen Zugang zu den Grundbedürfnissen haben, wie Nahrung, Wasser, Bildung und Gesundheit.
+
+
+
+## Die Ziele
+
+[Ziele für nachhaltige Entwicklung](https://sdgs.un.org/goals)
+
+[SDG Tracker von Ourworldindata.org](https://ourworldindata.org/sdgs)
+
+
+## Ausgewählte Indikatoren
+
+### Armut
+
+```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
+
+library(tidyverse)
+# library(owidR)
+#library(RColorBrewer)
+
+# Daten von OWID laden
+
+poverty <- read.csv("share-of-population-in-extreme-poverty.csv")
+
+#poverty$X.2.15.a.day...share.of.population.below.poverty.line[poverty$X.2.15.a.day...share.of.population.below.poverty.line==0.0000000] <- NA
+
+poverty %>% filter(Entity %in% c("Germany", "United States", "China", "India", "France", "World", "Russia", "Poland", "Canada", "South Africa", "Brazil", "Turkey")) %>% 
+ggplot(aes(x=Year, y=X.2.15.a.day...share.of.population.below.poverty.line #, color=Entity
+           ))+
+  geom_point()+
+  geom_smooth()+
+  scale_x_continuous(breaks=seq(0,2050, by=20))+
+   facet_wrap(~Entity, scales="free_y"
+             )+
+  theme_light()+
+labs(title="Entwicklung der Armut",
+     x="Jahr",
+     y="Anteil der Bevölkerung unterhalb der Armutsschwelle (%)",
+     caption="Eigene Darstellung, Daten: ourworldindata.org")
+```
+
+### Hunger
+
+```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
+
+library(tidyverse)
+# library(owidR)
+#library(RColorBrewer)
+
+# Daten von OWID laden
+
+hunger <- read.csv("prevalence-of-undernourishment.csv")
+
+hunger %>% filter(Entity %in% c("Germany",  "United States", "China", "India", "France", "World", "Russia", "Poland", "Canada", "South Africa", "Brazil", "Turkey")) %>% 
+ggplot(aes(x=Year, y=Prevalence.of.undernourishment....of.population. #, color=Entity
+           ))+
+  geom_point()+
+  geom_smooth()+
+  scale_x_continuous(breaks=seq(0,2050, by=5))+
+   facet_wrap(~Entity, scales="free_y"
+             )+
+  theme_light()+
+labs(title="Entwicklung des Hungers",
+     x="Jahr",
+     y="Unterernährter Anteil der Bevölkerung (%)",
+     caption="Eigene Darstellung, Daten: ourworldindata.org")
+```
+
+### Gesundheit
+
+```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
+
+library(tidyverse)
+# library(owidR)
+#library(RColorBrewer)
+
+# Daten von OWID laden
+
+suicide <- read.csv("death-rate-from-suicides-ghe.csv")
+
+suicide %>% filter(Entity %in% c("Germany",  "United States", "China", "India", "France", "World", "Russia", "Poland", "Canada", "South Africa", "Brazil", "Turkey")) %>% 
+ggplot(aes(x=Year, y= Death.rate.per.100.000.people...Cause..Self.harm...Sex..Both.sexes...Age_group..ALLAges #, color=Entity
+           ))+
+  geom_point()+
+  geom_smooth()+
+  scale_x_continuous(breaks=seq(0,2050, by=10))+
+   facet_wrap(~Entity, scales="free_y"
+             )+
+  theme_light()+
+labs(title="Suizid als Todesursache pro 100.000 Einwohner",
+     x="Jahr",
+     y="Suizid als Todesursache pro 100.000 Einwohner",
+     caption="Eigene Darstellung, Daten: ourworldindata.org")
+```
+
+### Bildung
+
+```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
+
+library(tidyverse)
+# library(owidR)
+#library(RColorBrewer)
+
+# Daten von OWID laden
+
+education <- read.csv("share-of-students-in-early-primary-education-achieving-minimum-reading-proficiency.csv")
+
+education %>% filter(Entity %in% c("Germany",  "United States", "China", "India", "France", "World", "Russia", "Poland", "Canada", "South Africa", "Brazil", "Turkey")) %>% 
+  ggplot(aes(x=Year, y=X4.1.1...Proportion.of.children.and.young.people.achieving.a.minimum.proficiency.level.in.reading.and.mathematics.......SE_TOT_PRFL...Primary...Both.sexes...Skill..Minimum.proficiency.in.reading   #, color=Entity
+  ))+
+  geom_point()+
+  geom_smooth()+
+  scale_x_continuous(breaks=seq(0,2050, by=10))+
+  facet_wrap(~Entity, scales="free_y"
+  )+
+  theme_light()+
+  labs(title="Anteil der Kinder und Jugendlichen mit Mindestkompetenzen",
+       x="Jahr",
+       y="Anteil der Kinder und Jugendlichen mit Mindestkompetenzen (%)",
+       caption="Eigene Darstellung, Daten: ourworldindata.org")
+```
+
 
 # Übungsfragen {.unnumbered}
 
