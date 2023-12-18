@@ -1650,6 +1650,8 @@ labs(title="Suizid als Todesursache pro 100.000 Einwohner",
 ```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
 
 library(tidyverse)
+# library(owidR)
+#library(RColorBrewer)
 
 # Daten von OWID laden
 
@@ -1669,62 +1671,6 @@ education %>% filter(Entity %in% c("Germany",  "United States", "China", "India"
        y="Anteil der Kinder und Jugendlichen mit Mindestkompetenzen (%)",
        caption="Eigene Darstellung, Daten: ourworldindata.org")
 ```
-
-### Verringerung von Ungleichheiten
-
-```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
-
-library(tidyverse)
-
-# Daten von OWID laden
-
-labor_share <- read.csv("labor-share-of-gdp.csv")
-
-labor_share %>% filter(Entity %in% c("Germany",  "United States", "China", "India", "France", "World", "Russia", "Poland", "Canada", "South Africa", "Brazil", "Turkey")) %>% 
-  ggplot(aes(x=Year, y= X10.4.1...Labour.share.of.GDP.......SL_EMP_GTOTL   #, color=Entity
-  ))+
-  geom_point()+
-  geom_smooth()+
-  scale_x_continuous(breaks=seq(0,2050, by=10))+
-  facet_wrap(~Entity, scales="free_y"
-  )+
-  theme_light()+
-  labs(title="Anteil der Löhne am Bruttoinlandsprodukt",
-       x="Jahr",
-       y="Anteil der Löhne am Bruttoinlandsprodukt (%)",
-       caption="Eigene Darstellung, Daten: ourworldindata.org")
-```
-
-
-
-### Verantwortungsvolle(r) Produktion und Konsum
-
-
-
-```{r echo=F, warning=F, message=F, cache=F, include=T, eval=T}
-
-library(tidyverse)
-
-# Daten von OWID laden
-
-domestic_material_consumption <- read.csv("domestic-material-consumption-per-capita.csv")
-
-domestic_material_consumption %>% filter(Entity %in% c("Germany",  "United States", "China", "India", "France", "World", "Russia", "Poland", "Canada", "South Africa", "Brazil", "Turkey")) %>% 
-  ggplot(aes(x=Year, y= X12.2.2...Domestic.material.consumption.per.capita..by.type.of.raw.material..tonnes....EN_MAT_DOMCMPC...Total.or.no.breakdown   #, color=Entity
-  ))+
-  geom_point()+
-  geom_smooth()+
-  scale_x_continuous(breaks=seq(0,2050, by=10))+
-  facet_wrap(~Entity, scales="free_y"
-  )+
-  theme_light()+
-  labs(title="Pro Kopf Materialverbrauch",
-       x="Jahr",
-       y="Pro Kopf Materialverbrauch",
-       caption="Eigene Darstellung, Daten: ourworldindata.org")
-```
-
-
 
 
 # Übungsfragen {.unnumbered}

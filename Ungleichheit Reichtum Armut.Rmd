@@ -1,0 +1,51 @@
+---
+title: "Probleme der Ungleichheit"
+author: "Prof. Dr. Jan S. Voßwinkel"
+date: "WiSe 2023/24"
+output: html_document
+---
+
+# Probleme von zu viel Reichtum
+
+- zu viele Luxusgeschäfte/ überteuerte Geschäfte in der Innenstadt
+
+- Bestimmte Produkte werden zu teuer (Flugtickets)
+
+- Arbeitskräftemangel (?)
+
+- Ausbeutungsreichum: Einige sind arm weil andere reich sind
+
+- mehr Treibhausgasemissionen
+
+- Einfluss auf Politik
+
+- Auseinanderfallen der Lebenswirklichkeiten
+
+- Chancengleichheit
+
+- Unruhen in der Gesellschaft
+
+- Preisanstiege; Gentrifizierung
+
+- Kriminalität aufgrund von Ungleichheit
+
+# Probleme von zu viel Armut
+
+- Hoher Krankenstand
+
+- Mangelnde Bildung
+
+- Mangelernährung
+
+- Kriminalität
+
+- Arbeitslosigkeit, Mismatcharbeitslosigkeit
+
+- Drogenabhängigkeit
+
+- Bevölkerungswachstum/-schrumpfung
+
+- Abhängigkeit von anderen Staaten/ Korruption
+
+- Lebenserwartung sinkt
+
